@@ -46,7 +46,7 @@ class ResultTest {
     @Test
     public void testIllegalInput() {
         try {
-            Result.gradingStudents(Arrays.asList(38));
+            Result.gradingStudents(Arrays.asList(-38, 101));
         } catch (Exception error) {
             assertTrue(error instanceof IllegalArgumentException);
         }
